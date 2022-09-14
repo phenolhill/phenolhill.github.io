@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>ProgAcademy - I. Troian</title>
+</head>
+<body>
+    <div class="box-header"></div>
+    <div class="box"></div>
+    <form id="form">
+        <input class="input-btc" id="btcPrice" type="number" placeholder="What is Bitcoin price today?">
+        <input class="input-dol" id="dolAmount" type="number" placeholder="How much $ do you have?">
+        <button class="btn" type="submit" onclick="calc()">Calculate</button>
+    </form>
+    <p id="result"></p>
+    <script>
+    let num1;
+    let num2;
+    let result;
+    function calc(){
+    num1 = Number(document.getElementById("btcPrice").value);
+    num2 = Number(document.getElementById("dolAmount").value);
+    result = num2 / num1;
+    alert('You can buy ' + result + ' BTC'); 
+    }
+    </script>
+</body>
+</html>
